@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TetherDrop Support</title>
+  <meta name="description" content="Support, setup guide, and privacy policy for TetherDrop.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div>
+        <img class="app-icon" src="AppIcon.png" alt="TetherDrop app icon">
+        <p class="eyebrow">TetherDrop Support</p>
+        <h1>TetherDrop</h1>
+        <p class="lead">USB / Wi-Fi / FTPでカメラからJPEGを受信し、iPhone・iPadで確認と共有を行うテザー撮影アプリです。</p>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#support">Support</a>
+        <a href="#setup">Setup</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#release">Release</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="support" class="band">
+      <div class="wrap two-column">
+        <div>
+          <h2>サポート</h2>
+          <p>TetherDropで接続できない、写真が受信されない、対応機種の挙動を共有したい場合は、以下の情報を添えてお問い合わせください。</p>
+        </div>
+        <div class="panel">
+          <h3>送ってほしい情報</h3>
+          <ul>
+            <li>カメラ機種名とファームウェアバージョン</li>
+            <li>iPhone / iPadの機種とiOS / iPadOSバージョン</li>
+            <li>接続方法: USB、Wi-Fi、FTP</li>
+            <li>保存形式: JPEG、RAW+JPEG、RAW</li>
+            <li>アプリ内の診断ログに表示されたエラー文</li>
+          </ul>
+          <p class="small">GitHub公開後は、サポート窓口として Issues または Discussions を利用する想定です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="setup" class="band muted">
+      <div class="wrap">
+        <h2>接続ガイド</h2>
+        <div class="grid">
+          <article>
+            <h3>Canon EOS</h3>
+            <p>R5 Mark II / R1 / R6で検証済みです。USBではカメラのネットワーク機能をオフにし、対応機種では「USB接続アプリの選択」を「画像取り込み/リモート制御」にします。Wi-Fiではスマートフォン接続でカメラSSIDに接続し、アプリ内のCanonスマートフォン接続を使います。</p>
+          </article>
+          <article>
+            <h3>Sony α</h3>
+            <p>カメラのPCリモートを有効にし、iPhone / iPadをカメラSSIDへ接続します。Sony直接Wi-Fiでは自動接続を試みます。アクセス認証が必要な機種では、カメラ画面のユーザー名、パスワード、フィンガープリントを確認してください。</p>
+          </article>
+          <article>
+            <h3>Nikon Z</h3>
+            <p>Wi-Fiは「パソコンと接続」系のモードで検出します。USBはデータ転送対応ケーブルで接続すると自動検出されます。JPEG生成が重い設定では表示まで時間がかかる場合があります。</p>
+          </article>
+          <article>
+            <h3>Fujifilm GFX</h3>
+            <p>USBテザー撮影を使います。GFX系のWi-Fiテザー撮影には対応していません。RAW+JPEGでは機種ごとの挙動差が大きいため、安定運用ではJPEG設定を推奨します。</p>
+          </article>
+          <article>
+            <h3>FTP転送</h3>
+            <p>カメラ側のFTP転送機能からTetherDropへ送信できます。アプリに表示されるIPアドレス、ポート、ユーザー名、パスワードをカメラ側へ入力し、パッシブモードを使ってください。</p>
+          </article>
+          <article>
+            <h3>USBで接続できない場合</h3>
+            <p>充電専用ケーブルや品質の低いケーブルでは通信が不安定になります。別のデータ転送対応ケーブル、別のメモリーカード、カメラの電源入れ直しを試してください。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="band">
+      <div class="wrap readable">
+        <h2>プライバシーポリシー</h2>
+        <p class="small">最終更新日: 2026年7月7日</p>
+        <p>TetherDropは、カメラから受信したJPEGを端末内のアプリ用Documents領域に保存します。ユーザーが共有、写真ライブラリ保存、AirDropなどの操作を行わない限り、写真を外部サービスへ送信しません。</p>
+
+        <h3>収集しない情報</h3>
+        <ul>
+          <li>アカウント登録情報</li>
+          <li>分析用トラッキングデータ</li>
+          <li>広告識別子</li>
+          <li>位置情報</li>
+          <li>写真や診断ログの自動アップロード</li>
+        </ul>
+
+        <h3>端末内に保存される情報</h3>
+        <ul>
+          <li>受信したJPEGファイル</li>
+          <li>セッションフォルダ名、撮影順、レーティング、カラータグ</li>
+          <li>前回のWi-Fi接続先など、再接続を助けるためのローカル設定</li>
+        </ul>
+
+        <h3>権限の利用目的</h3>
+        <ul>
+          <li>ローカルネットワーク: Wi-Fiカメラ検出、PTP/IP接続、FTP受信に使用します。</li>
+          <li>写真ライブラリへの追加: ユーザーが選んだ写真を写真アプリへ保存する時だけ使用します。</li>
+          <li>カメラ関連の権限: USB接続カメラから画像を取り込むために使用します。</li>
+        </ul>
+
+        <h3>第三者提供</h3>
+        <p>開発者は、TetherDrop内の写真、診断ログ、ローカル設定を第三者へ販売または共有しません。ユーザーが自分でAirDrop、共有シート、写真ライブラリ保存を選んだ場合は、選択した共有先のポリシーが適用されます。</p>
+
+        <h3>お問い合わせ</h3>
+        <p>サポート窓口は、アプリ公開時のApp StoreサポートURLまたはGitHubのIssues / Discussionsで案内します。</p>
+
+        <hr>
+
+        <h2>Privacy Policy</h2>
+        <p class="small">Last updated: July 7, 2026</p>
+        <p>TetherDrop saves JPEG files received from cameras into the app's Documents area on the device. Photos are not sent to external services unless the user explicitly shares them, saves them to Photos, or uses AirDrop or another system share destination.</p>
+
+        <h3>Information We Do Not Collect</h3>
+        <ul>
+          <li>Account registration data</li>
+          <li>Analytics or tracking data</li>
+          <li>Advertising identifiers</li>
+          <li>Location data</li>
+          <li>Automatic uploads of photos or diagnostic logs</li>
+        </ul>
+
+        <h3>Information Stored on the Device</h3>
+        <ul>
+          <li>Received JPEG files</li>
+          <li>Session folder names, capture order, ratings, and color tags</li>
+          <li>Local settings such as the last Wi-Fi camera host used for reconnection</li>
+        </ul>
+
+        <h3>Permission Usage</h3>
+        <ul>
+          <li>Local Network: used to discover Wi-Fi cameras, connect over PTP/IP, and receive FTP transfers.</li>
+          <li>Photo Library Add: used only when the user chooses to save selected photos to the Photos app.</li>
+          <li>Camera-related access: used to import images from connected USB cameras.</li>
+        </ul>
+
+        <h3>Third Parties</h3>
+        <p>The developer does not sell or share photos, diagnostic logs, or local settings stored by TetherDrop. If the user chooses AirDrop, the system share sheet, or saves to Photos, the selected destination's policy applies.</p>
+      </div>
+    </section>
+
+    <section id="release" class="band muted">
+      <div class="wrap readable">
+        <h2>リリースノート</h2>
+        <h3>Version 1.0</h3>
+        <ul>
+          <li>USB、Wi-Fi (PTP/IP)、FTP受信に対応</li>
+          <li>JPEG専用の高速取り込みと即時表示</li>
+          <li>AirDrop、写真ライブラリ保存、グリッド選択、レーティング、カラータグに対応</li>
+          <li>Canon / Sony / Nikon / Fujifilm GFX向けの実機検証済み接続ガイドを追加</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>TetherDrop Support</p>
+    </div>
+  </footer>
+</body>
+</html>
