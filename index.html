@@ -32,6 +32,8 @@
       <div class="wrap two-column">
         <div>
           <h2>サポート</h2>
+          <p>個別のお問い合わせ：<a href="mailto:support@tetherdrop.app">support@tetherdrop.app</a></p>
+          <p class="small">紹介のメール認証・特典受取に関するご相談もこちらへお寄せください。認証コードや未使用の特典コードを公開投稿に記載しないでください。</p>
           <p>TetherDropで接続できない、写真が受信されない、対応機種の挙動を共有したい場合は、以下の情報を添えてお問い合わせください。</p>
         </div>
         <div class="panel">
@@ -104,12 +106,11 @@
     <section id="privacy" class="band">
       <div class="wrap readable">
         <h2>プライバシーポリシー</h2>
-        <p class="small">最終更新日: 2026年7月7日</p>
+        <p class="small">最終更新日: 2026年10月16日</p>
         <p>TetherDropは、カメラから受信したJPEGを端末内のアプリ用Documents領域に保存します。ユーザーが共有、写真ライブラリ保存、AirDropなどの操作を行わない限り、写真を外部サービスへ送信しません。</p>
 
         <h3>収集しない情報</h3>
         <ul>
-          <li>アカウント登録情報</li>
           <li>分析用トラッキングデータ</li>
           <li>広告識別子</li>
           <li>位置情報</li>
@@ -134,20 +135,22 @@
         <p>開発者は、TetherDrop内の写真、診断ログ、ローカル設定を第三者へ販売または共有しません。ユーザーが自分でAirDrop、共有シート、写真ライブラリ保存を選んだ場合は、選択した共有先のポリシーが適用されます。</p>
 
         <h3>サブスクリプションと購入情報</h3>
-        <p>TetherDropでサブスクリプションを提供する場合、購入と請求はAppleのApp内課金により処理されます。購入状態の確認、復元、サブスクリプション権限の管理のためにRevenueCatを使用する場合があります。これらのサービスに写真ファイル、レーティング、カラータグ、診断ログを送信することはありません。</p>
+        <p>購入と請求はAppleのApp内課金により処理されます。購入状態の確認、復元、サブスクリプション権限の管理にRevenueCatを使用します。購入記録とアプリユーザー識別子等を扱います。これらのサービスに写真ファイル、レーティング、カラータグ、診断ログを送信することはありません。</p>
+
+        <h3>任意のお友達紹介機能</h3>
+        <p>対応版では、任意の紹介キャンペーンへの参加時にメールアドレスを認証し、紹介関係・参加日時・承認状況・特典配布記録を管理します。SupabaseとResendを利用し、紹介相手のメールアドレスは他の参加者には表示しません。紹介アカウントはアプリ内で削除できます。重複防止用の照合値と紹介・配布履歴は募集終了から180日経過後の定期処理で削除します。認証アカウント自体はこの定期処理では削除されません。詳細は<a href="https://invite.tetherdrop.app/privacy/">紹介機能・お問い合わせのプライバシーポリシー</a>をご確認ください。</p>
 
         <h3>お問い合わせ</h3>
-        <p>サポート窓口は、アプリ公開時のApp StoreサポートURLまたはGitHubのIssues / Discussionsで案内します。</p>
+        <p><a href="mailto:support@tetherdrop.app">support@tetherdrop.app</a> 宛てのメールはPorkbunから運営者のGoogle Gmailへ転送し、お問い合わせへの回答・調査に使用します。必要な期間保持し、不要になった記録を削除します。個人情報の確認・訂正・削除等のご相談もこちらへお寄せください。</p>
 
         <hr>
 
         <h2>Privacy Policy</h2>
-        <p class="small">Last updated: July 7, 2026</p>
+        <p class="small">Last updated: October 16, 2026</p>
         <p>TetherDrop saves JPEG files received from cameras into the app's Documents area on the device. Photos are not sent to external services unless the user explicitly shares them, saves them to Photos, or uses AirDrop or another system share destination.</p>
 
         <h3>Information We Do Not Collect</h3>
         <ul>
-          <li>Account registration data</li>
           <li>Analytics or tracking data</li>
           <li>Advertising identifiers</li>
           <li>Location data</li>
@@ -172,14 +175,17 @@
         <p>The developer does not sell or share photos, diagnostic logs, or local settings stored by TetherDrop. If the user chooses AirDrop, the system share sheet, or saves to Photos, the selected destination's policy applies.</p>
 
         <h3>Subscriptions and Purchase Information</h3>
-        <p>If TetherDrop offers subscriptions, purchases and billing are processed through Apple's In-App Purchase system. TetherDrop may use RevenueCat to check purchase status, restore purchases, and manage subscription entitlements. Photos, ratings, color tags, and diagnostic logs are not sent to these services.</p>
+        <p>Purchases and billing are processed through Apple's In-App Purchase system. TetherDrop uses RevenueCat to check purchase status, restore purchases, and manage subscription entitlements, processing purchase records and app user identifiers. Photos, ratings, color tags, and diagnostic logs are not sent to these services.</p>
+        <h3>Optional Referrals and Support</h3>
+        <p>Supported versions offer an optional referral campaign using email authentication, referral relationships, registration and approval records, and reward distribution records. Supabase and Resend support this feature. Other participants cannot see your email address. You can delete your referral account in the app. Matching values and referral/reward records are removed by a scheduled cleanup after 180 days from recruitment ending; this cleanup does not delete authentication accounts. See the <a href="https://invite.tetherdrop.app/privacy/#english">Referral and Support Privacy Policy</a> for details.</p>
+        <p>Contact <a href="mailto:support@tetherdrop.app">support@tetherdrop.app</a> for support and personal data requests. Porkbun forwards messages to the operator's Google Gmail inbox. We use them to respond and investigate, retain them while needed, and delete them when no longer needed.</p>
       </div>
     </section>
 
     <section id="terms" class="band muted">
       <div class="wrap readable">
         <h2>利用規約</h2>
-        <p class="small">最終更新日: 2026年7月8日</p>
+        <p class="small">最終更新日: 2026年10月16日</p>
         <p>この利用規約は、TetherDropの利用条件を定めるものです。TetherDropをダウンロード、購入、または使用することで、本規約に同意したものとみなされます。</p>
 
         <h3>サービス内容</h3>
@@ -191,7 +197,7 @@
           <li>サブスクリプションはAppleのApp内課金を通じて購入され、支払いはユーザーのApple Accountに請求されます。</li>
           <li>自動更新サブスクリプションは、現在の期間が終了する24時間以上前にキャンセルされない限り、自動的に更新されます。</li>
           <li>サブスクリプションの管理とキャンセルは、App StoreまたはApple Accountのサブスクリプション設定から行えます。</li>
-          <li>無料トライアルが提供される場合、トライアル終了後は選択したプランの料金で自動更新されます。</li>
+          <li>通常のサブスクリプション無料トライアルは、キャンセルしない限り終了後に選択したプランの料金で自動更新されます。自動更新しない紹介特典の無料オファーは、Appleの引換画面と<a href="https://invite.tetherdrop.app/terms/">キャンペーン参加条件</a>に従います。</li>
         </ul>
 
         <h3>購入の復元</h3>
@@ -215,7 +221,7 @@
         <hr>
 
         <h2>Terms of Use</h2>
-        <p class="small">Last updated: July 8, 2026</p>
+        <p class="small">Last updated: October 16, 2026</p>
         <p>These Terms of Use govern your use of TetherDrop. By downloading, purchasing, or using TetherDrop, you agree to these terms.</p>
 
         <h3>Service</h3>
@@ -227,7 +233,7 @@
           <li>Subscriptions are purchased through Apple's In-App Purchase system and are charged to the user's Apple Account.</li>
           <li>Auto-renewable subscriptions renew automatically unless canceled at least 24 hours before the end of the current period.</li>
           <li>Subscriptions can be managed or canceled in the App Store or Apple Account subscription settings.</li>
-          <li>If a free trial is offered, the selected plan renews automatically at the end of the trial unless canceled.</li>
+          <li>Standard subscription free trials renew automatically at the end of the trial unless canceled. Referral offers without automatic renewal follow the Apple redemption screen and the <a href="https://invite.tetherdrop.app/terms/">campaign terms</a>.</li>
         </ul>
 
         <h3>Restore Purchases</h3>
